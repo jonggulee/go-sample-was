@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSP Data</title>
+</head>
+<body>
+    <h1>CSP Data</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>CSP Name</th>
+            <th>Virtual Servers</th>
+            <th>Platform as a Service</th>
+            <th>Serverless Computing</th>
+            <th>Docker Management</th>
+            <th>Kubernetes Management</th>
+            <th>Object Storage</th>
+            <th>Global Content Delivery</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item['id'] }}</td>
+            <td>{{ item['csp_name'] }}</td>
+            <td>{{ item['virtual_servers'] }}</td>
+            <td>{{ item['platform_as_a_service'] }}</td>
+            <td>{{ item['serverless_computing'] }}</td>
+            <td>{{ item['docker_management'] }}</td>
+            <td>{{ item['kubernetes_management'] }}</td>
+            <td>{{ item['object_storage'] }}</td>
+            <td>{{ item['global_content_delivery'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
