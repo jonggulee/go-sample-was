@@ -1,1 +1,1 @@
-# go-sample-was
+# py-sample-was
