@@ -43,10 +43,9 @@ class DatabaseConnection:
 
     def get_all_csp_records(self):
         cur = self.connection.cursor()
-        sql = "SELECT * FROM csp"
+        sql = "SELECT * FROM list"
         cur.execute(sql)
         rows = cur.fetchall()
-        print(rows)
         return rows
 
 if __name__ == "__main__":
